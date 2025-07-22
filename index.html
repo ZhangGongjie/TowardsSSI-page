@@ -187,7 +187,8 @@
           </p>
           <p>
             <strong>Step 1:</strong> We generate a scale-calibrated depth map by integrating scale-invariant and 
-            scale-aware depth estimation techniques. This ensures accurate geometric reconstruction with proper scale information.
+            scale-aware depth estimation techniques. This ensures accurate geometric reconstruction with proper scale information. 
+            (Author's Note: We noticed recent works (VGGT, UniDepth-V2, etc.) have even better results for depth estimation. We believe our pipeline can be improved by using these methods.)
           </p>
           <p>
             <strong>Step 2:</strong> Predicted camera parameters are used to project images into 3D space and 
@@ -201,6 +202,8 @@
 
         <img id="teaser" src="./static/images/teaser.jpg" alt="Teaser image" style="width: 100%; margin: 1.5rem 0;">
         <p class="has-text-centered" style="font-style: italic; color: #666; margin-top: 0.5rem;">
+        </p>
+        <p>
           Our pipeline mitigates the scarcity of spatial data by generating scale- and metric-authentic 3D data 
           (point clouds, depth maps, camera poses, etc.) with rich annotations. Our generated data can support 
           a wide range of tasks, including spatial perception and MLLM-based captioning, spatial reasoning, and grounding.
