@@ -161,9 +161,9 @@
         <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
           <p>
-            Spatial intelligence is crucial for AI systems to perceive, understand, and interact with 3D environments. 
-            However, unlike 2D imagery which is abundant online, 3D datasets are expensive to collect and require 
-            specialized sensors like LiDAR. This creates a critical data bottleneck for advancing spatial intelligence.
+            Spatial intelligence is crucial for AI to perceive, understand, and interact with physical world. 
+            However, unlike 2D imagery which is abundant online, 3D datasets are expensive to collect, requiring 
+            specialized sensors like LiDAR or pseudo-RGBD, and laborious annotation. This creates a critical data bottleneck for advancing spatial intelligence.
           </p>
           <p>
             To address the limitations of existing spatial datasets, we present a novel data-generation pipeline that 
@@ -201,13 +201,13 @@
         </div>
 
         <img id="teaser" src="./static/images/teaser.jpg" alt="Teaser image" style="width: 100%; margin: 1.5rem 0;">
-        <p class="has-text-centered" style="font-style: italic; color: #666; margin-top: 0.5rem;">
-        </p>
-        <p>
-          Our pipeline mitigates the scarcity of spatial data by generating scale- and metric-authentic 3D data 
-          (point clouds, depth maps, camera poses, etc.) with rich annotations. Our generated data can support 
-          a wide range of tasks, including spatial perception and MLLM-based captioning, spatial reasoning, and grounding.
-        </p>
+        <div class="content has-text-justified">
+          <p>
+            Our pipeline mitigates the scarcity of spatial data by generating scale- and metric-authentic 3D data 
+            (point clouds, depth maps, camera poses, etc.) with rich annotations. Our generated data can support 
+            a wide range of tasks, including spatial perception and MLLM-based captioning, spatial reasoning, and grounding.
+          </p>
+        </div>
 
       </div>
     </div>
