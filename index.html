@@ -130,22 +130,8 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img id="teaser" src="./static/images/teaser.jpg" alt="Teaser image" height="100%">
-      <h3 class="has-text-centered">
-        Our pipeline mitigates the scarcity of spatial data 
-        by generating scale- and metric-authentic 3D data 
-        (point clouds, depth maps, camera poses, etc.) 
-        with rich annotations.
-        Our generated data can support a wide range of tasks, 
-        including spatial perception and MLLM-based captioning, 
-        spatial reasoning, and grounding.
-      </h3>
-    </div>
-  </div>
-</section>
+
+
 
 
 <section class="section">
@@ -169,26 +155,76 @@
     </div>
     <!--/ Abstract. -->
 
+    <!-- Motivation -->
     <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Pipeline</h2>
-        <img id="pipeline" src="./static/images/pipline.jpg" alt="Pipeline image" height="100%">
-        <h3 class="has-text-centered">
-          First, we generate a scale-calibrated depth map 
-          by integrating scale-invariant and 
-          scale-aware depth estimation. 
-          Next, predicted camera parameters are used 
-          to project images into 3D space and 
-          remove invalid points. 
-          Finally, original 2D image annotations are 
-          also lifted to 3D, resulting in a fully annotated 
-          3D representation for various downstream tasks.
-        </h3>
+        <h2 class="title is-3">Motivation</h2>
+        <div class="content has-text-justified">
+          <p>
+            Spatial intelligence is crucial for AI systems to perceive, understand, and interact with 3D environments. 
+            However, unlike 2D imagery which is abundant online, 3D datasets are expensive to collect and require 
+            specialized sensors like LiDAR. This creates a critical data bottleneck for advancing spatial intelligence.
+          </p>
+          <p>
+            To address the limitations of existing spatial datasets, we present a novel data-generation pipeline that 
+            <strong>lifts</strong> large-scale 2D image datasets into high-quality, richly annotated 3D representations 
+            covering diverse scenes and tasks. This approach is superior to purely synthetic simulation data while avoiding 
+            the high costs of sensor-based data collection.
+          </p>
+        </div>
       </div>
     </div>
+    <!--/ Motivation. -->
 
-    <!-- Paper video. -->
+    <!-- Data Curation Pipeline -->
     <div class="columns is-centered has-text-centered" style="margin-top: 3rem;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Data Curation Pipeline</h2>
+        <img id="pipeline" src="./static/images/pipline.jpg" alt="Pipeline image" style="width: 100%; margin: 1.5rem 0;">
+        <div class="content has-text-justified">
+          <p>
+            Our pipeline converts single-view 2D images into comprehensive 3D representations through three key steps:
+          </p>
+          <p>
+            <strong>Step 1:</strong> We generate a scale-calibrated depth map by integrating scale-invariant and 
+            scale-aware depth estimation techniques. This ensures accurate geometric reconstruction with proper scale information.
+          </p>
+          <p>
+            <strong>Step 2:</strong> Predicted camera parameters are used to project images into 3D space and 
+            remove invalid points, creating accurate point cloud representations of the scene.
+          </p>
+          <p>
+            <strong>Step 3:</strong> Original 2D image annotations are lifted to 3D, resulting in a fully annotated 
+            3D representation ready for various downstream spatial intelligence tasks.
+          </p>
+        </div>
+
+        <img id="teaser" src="./static/images/teaser.jpg" alt="Teaser image" style="width: 100%; margin: 1.5rem 0;">
+        <p class="has-text-centered" style="font-style: italic; color: #666; margin-top: 0.5rem;">
+          Our pipeline mitigates the scarcity of spatial data by generating scale- and metric-authentic 3D data 
+          (point clouds, depth maps, camera poses, etc.) with rich annotations. Our generated data can support 
+          a wide range of tasks, including spatial perception and MLLM-based captioning, spatial reasoning, and grounding.
+        </p>
+
+      </div>
+    </div>
+    <!--/ Data Curation Pipeline. -->
+
+    <!-- Experiments -->
+    <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <div class="content has-text-justified">
+          <p style="text-align: center; color: #666; font-style: italic;">
+            Detailed experimental results and evaluations will be added soon.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Experiments. -->
+
+    <!-- Demos -->
+    <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Demos for Generated 3D Data (with Annotations)</h2>
         <div class="publication-video">
@@ -198,7 +234,7 @@
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
+    <!--/ Demos. -->
   </div>
 </section>
 
